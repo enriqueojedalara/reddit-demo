@@ -7,7 +7,7 @@ var require = {
 	waitSeconds: 30,
 	paths: {
 		'jquery': [
-			'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min',
+			'//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min',
 		],
 
 		'bootstrap': [
@@ -27,7 +27,8 @@ var require = {
 		],
 
 		'angular-couch-potato': [
-			'http://laurelnaiad.github.io/angular-couch-potato/angular-couch-potato',
+			//Added local because was not SSL the remote one
+			'../vendor/angular-couch-potato/angular-couch-potato'
 		],
 
 		'angular-ui-router': [

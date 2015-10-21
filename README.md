@@ -5,6 +5,8 @@ This project was created to show some code.
 
 This project as divided in two mini-projects, back-end and front-end using JSON for communications between them.
 
+You can see the demo in https://reddit.chuque.org/
+
 For back-end:
 
 * PHP

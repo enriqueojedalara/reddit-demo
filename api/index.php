@@ -3,10 +3,10 @@ $start_timestamp = microtime();
 
 use Phalcon\DI\FactoryDefault;
 use Phalcon\Mvc\Router;
-use	Phalcon\Mvc\Micro\Collection;
-use	Phalcon\Config\Adapter\Ini;
-use	Phalcon\Loader;
-use	Phalcon\Mvc\Application;
+use Phalcon\Mvc\Micro\Collection;
+use Phalcon\Config\Adapter\Ini;
+use Phalcon\Loader;
+use Phalcon\Mvc\Application;
 use Phalcon\Logger;
 use Phalcon\Logger\Adapter\File as FileAdapter;
 
