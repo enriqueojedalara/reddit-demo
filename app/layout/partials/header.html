@@ -1,0 +1,38 @@
+<header ng-controller="HeaderController">
+    <div class="header navbar">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-margin no-padding">
+            <div class="logo pull-left" ng-click="goHome()">
+                <a href="#"><h3><i class="fa fa-reddit"></i> Reddit Demo</h3></a>
+            </div>
+        </div>
+        <div class="pull-right">
+            <ul>
+                <li ng-if="!isAuthorized">
+                    <a ng-href="/signin">
+                        <i class="fa fa-sign-in hidden-xs"> Sign in</i>
+                        <i class="fa fa-sign-in visible-xs icon"></i>
+                    </a>
+                </li>
+                <li ng-if="!isAuthorized">
+                    <a ng-href="/signup">
+                        <i class="fa fa-plus-circle hidden-xs"> Sign up</i>
+                        <i class="fa fa-plus-circle visible-xs icon"></i>
+                    </a>
+                    </a>
+                </li>
+                <li ng-if="isAuthorized">
+                    <a ng-href="/submit">
+                        <i class="fa fa-link hidden-xs"> Submit a new link</i>
+                        <i class="fa fa-link visible-xs icon"></i>
+                    </a>
+                </li>
+                <li ng-if="isAuthorized">
+                    <a ng-href="/logout">
+                        <i class="fa fa-sign-out hidden-xs"> Logout</i>
+                        <i class="fa fa-sign-out visible-xs icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

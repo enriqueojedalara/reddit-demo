@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <form class="form account-wall">
+                <div class="text-center title">
+                    <i class="fa fa-reddit"></i>
+                    <h1>Register a new account</h1>
+                </div>
+                	<input ng-model="user.username" type="text" class="form-control" placeholder="Choose a username" required autofocus>
+	                <input ng-model="user.password" type="password" class="form-control" placeholder="Password" required>
+	                <input ng-model="user.password2" type="password" class="form-control" placeholder="Verify password" required>
+	                <input ng-model="user.email" type="email" class="form-control" placeholder="Email (Optional)" required>
+	                
+	                <button class="btn btn-lg btn-primary btn-block" ng-click="register()">Sign up</button>
+                    <span class="clearfix"></span>
+                    <a href="#" class="pull-right" ng-href="/signin">I already have an account</a>
+                    <span class="clearfix"></span>
+            </form>
+        </div>
+    </div>
+</div>

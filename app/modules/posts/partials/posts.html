@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <form class="form account-wall posts">
+                <div class="text-center title">
+                	<i class="fa fa-reddit"></i>
+                    <h1>Submit to reddit demo</h1>
+                </div>
+                <textarea ng-model="post.title" maxlength="512" class="form-control" placeholder="Title" required autofocus />
+                <input ng-model="post.url" maxlength="1024" type="url" class="form-control" placeholder="Url" required>
+                <button class="btn btn-lg btn-primary btn-block" ng-click="submit();">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+# URL rewrite if uses apache in stead of nginx
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule (.*)$ index.php?_url=/$1 [QSA,L]

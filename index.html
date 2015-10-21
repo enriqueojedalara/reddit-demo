@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+	<head>
+		<base href="/">
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<title>Reddit demo</title>
+
+		<!-- CSS Links -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/font-awesome.min.css">	
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/base.css">
+		
+
+		<link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+
+		<!-- ui-view container -->
+		<div 
+			data-ui-view="root" 
+			class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 index">
+			Loading...
+		</div>
+		<!--[if lt IE 9]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<script src="app/config.js"></script>
+		<script src="vendor/requirejs/2.1.15/require.min.js" data-main="app/main.js"></script>
+	</body>
+</html>

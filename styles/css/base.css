@@ -1,0 +1,214 @@
+html, body{
+	margin: 0;
+  	padding: 0;
+	background-color: #ddd!important;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#main {
+	margin-top: 80px;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+.clearfix{
+	clear: both;
+	height: 0px;
+}
+.overlay{
+	display:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 903;
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+/* 
+ * HEADER
+ */
+header{
+	width: 100%;
+	background: #fff;
+	top: 0;
+  	border-width: 0 0 1px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header div.header.navbar {
+	margin-bottom: 0px;
+}
+
+header div.header.navbar.navbar-top {
+	height: 52px;
+	transition: all 0.1s ease-out 0s;
+	-webkit-transition: all 0.1s ease-out 0s;
+	-moz-transition: all 0.1s ease-out 0s;
+	-ms-transition: all 0.1s ease-out 0s;
+	-o-transition: all 0.1s ease-out 0s;
+	font-weight: bold;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+header ul li {
+	display: block;
+	float: left;
+	line-height: 52px;
+}
+
+header ul li a {
+	display: block;
+	float: right;
+	font-size: 14px;
+	padding: 0 20px 0 20px;
+	text-decoration: none;
+	transition: opacity 0.2s ease-out 0s;
+	-webkit-transition: opacity 0.21s ease-out 0s;
+	-moz-transition: opacity 0.2s ease-out 0s;
+	-ms-transition: opacity 0.2s ease-out 0s;
+	-o-transition: opacity 0.2s ease-out 0s;
+}
+
+header ul li a:hover {
+	background:#333;
+	color:white;
+	opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+
+
+
+/*Form*/
+.form{
+    max-width: 330px;
+    margin: 0 auto;
+}
+.form.account-wall{
+	padding: 15px;
+}
+
+.form .form-control{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form input[type="password"],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="url"],
+.form textarea {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form textarea{
+	resize: none;
+}
+.form .title i{
+	font-size: 5em;
+}
+
+.account-wall {
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #fff;
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/*Index posts*/
+div.posts .row{
+	background-color: white;
+	margin-bottom: 1.45em;
+	position:relative;
+	overflow: hidden;
+	-moz-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+div.posts .row > div {
+	margin-right:5px;
+	margin: 0 auto;
+	margin: 10px;
+}
+
+div.posts .row .votes-number {
+	text-align: center;
+	font-size: 1.75em;
+    line-height: 20px;
+}
+div.posts div.rank {
+	font-size:2em;
+	text-align: center;
+	height:100%;
+	border: solid 1px #CCCCCC;
+	background-color: #f9f9f9;
+	padding: 1em 1.25em 0.25em 1.25em;
+}
+div.posts div.rank h6 {
+	font-size: 0.45em;
+}
+div.posts div.vote-up,
+div.posts div.vote-down {
+	cursor:pointer;
+}
+
+
+div.posts .row .title,
+div.posts .row .info,
+div.posts .row .title p {
+
+}
+div.posts .row .title p {
+	font-size: 1.5em;
+	color: blue;
+    outline: none;
+    padding: 0px;
+    overflow: hidden;
+}
+div.posts .row .title small {
+	margin: 20px 0px 0px 10px;
+	font-size: 0.85em;
+}
+
+div.posts .votes {
+	text-align: center;
+}
+div.posts .votes .vote-up,
+div.posts .votes .vote-down {
+	font-size: 1.9em;
+}
+
+div.posts .voteup{
+	color:#FF8B60;
+}
+
+div.posts .votedown{
+	color:#9494FF;
+}

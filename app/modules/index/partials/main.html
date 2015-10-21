@@ -1,0 +1,31 @@
+<div class="container-fluid posts">
+	<div class="alert alert-success">This is a demo based in Reddit...probably it is buggy and with lot of things to improve but it was developed as fast as I could... Cheers!!! and Happy coding</div>
+	<div>
+		<a href="" ng-click="fetchLess()" class="btn btn-primary">Less</a>
+		<a href="" ng-click="fetchMore()" class="btn btn-primary">More</a> 
+		Page {{page}}
+	</div>
+	<br/>
+	<div ng-repeat="obj in posts" class="row" data-id="{{obj.id}}">
+        <div class="rank pull-left">{{obj.rank}}<h6>{{obj.score}}</h6></div>
+		<div class="votes pull-left">
+		
+			<div class="vote-up" ng-click="vote($index, 1);" ng-class="votes[obj.id] == '1' ? 'voteup' : ''">
+				<i class="fa fa-arrow-up"></i>
+			</div>
+			<div class="votes-number">
+				{{obj.votes}}
+			</div>
+			<div class="vote-down" ng-click="vote($index, -1);" ng-class="votes[obj.id] == '-1' ? 'votedown' : ''">
+				<i class="fa fa-arrow-down"></i>
+			</div>
+		</div>
+		<div class="title">
+			<p><a href="{{obj.url}}" target="_blank">{{obj.title}}</a></p>
+		</div>
+		<div class="info">
+			<small>Posted {{obj.creation|timeago}} by {{obj.username}}</small>
+		</div>
+    </div>	
+</div>
+
