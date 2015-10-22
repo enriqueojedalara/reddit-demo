@@ -26,11 +26,11 @@ Everything is modularized as you can see in the code.
 
 Also there is some things I consider could be improved.
 
-1) Add memcache layer, I did not have time to added it.
-2) Create a HTTP global service in Front-End
-3) Improve the error management (Front-end)
-4) Obviously, styling (I am not a good designer)
-...
+* Add memcache layer, I did not have time to added it.
+* Create a HTTP global service in Front-End
+* Improve the error management (Front-end)
+* Obviously, styling (I am not a good designer)
+* Compile the project (FE) to minimize the size and just let 1 compiled file (bundle.js for example)
 
 Here is the original request:
 
